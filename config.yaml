@@ -7,7 +7,8 @@ license: 'CC-BY 4.0'
 contact: 'its-hpc@pomona.edu'
 branch: 'main'
 life_cycle: 'stable'
-source: 'https://github.com/pomona-college-hpc/gpu-computing'
+source: 'https://github.com/Pomona-College/hpc-gpu-computing'
+url: 'https://pomona-college.github.io/hpc-gpu-computing/'
 episodes:
 - 01-intro-gpu-computing.md
 - 02-sagehen-gpu-hardware.md
