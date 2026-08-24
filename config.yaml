@@ -1,0 +1,25 @@
+---
+carpentry: 'incubator'
+title: 'GPU Computing on Sagehen — Pomona College HPC Workshop Series'
+keywords: 'Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen, A100, deep learning'
+created: '2026-03-05'
+license: 'CC-BY 4.0'
+contact: 'its-hpc@pomona.edu'
+branch: 'main'
+life_cycle: 'stable'
+source: 'https://github.com/pomona-college-hpc/gpu-computing'
+episodes:
+- 01-intro-gpu-computing.md
+- 02-sagehen-gpu-hardware.md
+- 03-requesting-gpus.md
+- 04-gpu-software-setup.md
+- 05-pytorch-tensorflow.md
+- 06-monitoring-optimization.md
+- 07-gpu-etiquette.md
+learners:
+- reference.md
+- setup.md
+instructors:
+- instructor-notes.md
+profiles:
+- learner-profiles.md
