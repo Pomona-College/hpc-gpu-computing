@@ -24,3 +24,9 @@ Licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
 # GPU Computing on Sagehen
 
 Welcome to this workshop! Check the episodes to get started.
+
+## Acknowledgments
+
+Developed by **Andrew Wilson**, Director of Research Computing and Digital
+Scholarship at Pomona College, with **Andrei Motchenko**, who tested, edited
+and produced screenshots for the workshop series.
