@@ -224,7 +224,7 @@ Never run GPU code directly on the login node.
 **Error 2: "NVIDIA driver too old"**
 
 **Diagnosis:** The PyTorch build expects a *newer* CUDA than the node's driver
-supports. Sagehen's GPU nodes report CUDA 12.7 in `nvidia-smi`, so this is rare
+supports. Sagehen HPC's GPU nodes report CUDA 12.7 in `nvidia-smi`, so this is rare
 here — but it happens if you install a PyTorch built against a CUDA newer than
 that. Note the number in `nvidia-smi` is the *driver's* capability, which is
 independent of which `cuda/` toolkit module you have loaded.

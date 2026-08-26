@@ -2,7 +2,7 @@
 title: "Reference"
 ---
 
-## GPU Hardware on Sagehen
+## GPU Hardware on Sagehen HPC
 
 ### GPU Partition Overview
 

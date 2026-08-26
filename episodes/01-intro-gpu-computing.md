@@ -43,7 +43,7 @@ GPUs can provide 10x-100x speedup for suitable tasks:
 - Image processing: 5-20x speedup
 - Data sorting: 5-10x speedup
 
-## Sagehen GPU Hardware
+## Sagehen HPC GPU Hardware
 
 Sagehen has **10 GPUs across multiple nodes** (confirmed May 2026): 4× A100 (80 GB), 4× L40S (48 GB), 2× RTX PRO 6000 Blackwell (96 GB). For full hardware breakdown see README.md or Workshop 16 episode 02.
 
@@ -134,7 +134,7 @@ import tensorflow as tf
 gpus = tf.config.list_physical_devices('GPU')
 ```
 
-## Getting Started with GPU on Sagehen
+## Getting Started with GPU on Sagehen HPC
 
 ### Three Steps
 

@@ -230,7 +230,7 @@ researchers.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints
-- Sagehen has limited GPUs; fair sharing is essential
+- Sagehen HPC has limited GPUs; fair sharing is essential
 - Request appropriate GPU type for your workload
 - Don't monopolize GPUs or leave idle
 - Test on L40S before scaling to A100

@@ -1,5 +1,5 @@
 ---
-title: "Sagehen GPU Hardware Configuration"
+title: "Sagehen HPC GPU Hardware Configuration"
 teaching: 20
 exercises: 10
 ---
@@ -18,7 +18,7 @@ exercises: 10
 - Understand GPU memory management
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Sagehen GPU Nodes
+## Sagehen HPC GPU Nodes
 
 Sagehen has **10 GPUs across multiple nodes** (confirmed by Andrew Wilson, May 2026): 4× A100 (80 GB), 4× L40S (48 GB), 2× RTX PRO 6000 (96 GB).
 

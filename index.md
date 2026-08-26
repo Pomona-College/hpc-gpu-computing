@@ -1,5 +1,5 @@
 ---
-title: GPU Computing on Sagehen
+title: GPU Computing on Sagehen HPC
 ---
 
 ::::::::::::::::::::::::::::::::::::: callout

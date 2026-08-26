@@ -1,4 +1,4 @@
-# GPU Computing on Sagehen
+# GPU Computing on Sagehen HPC
 
 Pomona College HPC Workshop Series
 
