@@ -4,7 +4,7 @@ title: "Instructor Notes"
 
 ## Workshop Overview
 
-This workshop introduces researchers to GPU computing on the Sagehen cluster at Pomona College. It covers GPU hardware, CUDA programming concepts, using GPU-accelerated Python frameworks (PyTorch, TensorFlow), and best practices for efficient GPU utilization.
+This workshop introduces researchers to GPU computing on the Sagehen HPC cluster at Pomona College. It covers GPU hardware, CUDA programming concepts, using GPU-accelerated Python frameworks (PyTorch, TensorFlow), and best practices for efficient GPU utilization.
 
 **Total time:** Approximately 3.5--4 hours (including breaks)
 **Target audience:** Researchers with some HPC experience who want to leverage GPU acceleration
@@ -42,7 +42,7 @@ This workshop introduces researchers to GPU computing on the Sagehen cluster at 
 - "Can I use GPUs for my R code?" -- Generally no, unless using specific GPU-enabled packages like `gpuR`. Most R workloads benefit more from CPU parallelism
 - "How do I know if my code will benefit from GPUs?" -- Look for operations on large matrices, deep learning training, or embarrassingly parallel computations
 
-### Episode 2: GPU Hardware on Sagehen (20 min teaching, 10 min exercises)
+### Episode 2: GPU Hardware on Sagehen HPC (20 min teaching, 10 min exercises)
 
 **Key concepts:** A100/L40S/RTX PRO 6000 specs (10 GPUs total), VRAM, memory bandwidth, tensor cores
 

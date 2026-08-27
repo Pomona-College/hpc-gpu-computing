@@ -1,5 +1,5 @@
 ---
-title: "Sagehen GPU Hardware Configuration"
+title: "Sagehen HPC GPU Hardware Configuration"
 teaching: 20
 exercises: 10
 ---
@@ -18,7 +18,7 @@ exercises: 10
 - Understand GPU memory management
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Sagehen GPU Nodes
+## Sagehen HPC GPU Nodes
 
 Sagehen has **10 GPUs across multiple nodes** (confirmed by Andrew Wilson, May 2026): 4× A100 (80 GB), 4× L40S (48 GB), 2× RTX PRO 6000 (96 GB).
 
@@ -49,8 +49,9 @@ Use `sinfo -p gpu --Format=NodeList,Gres,GresUsed` to check current availability
 For detailed specifications, see NVIDIA's official documentation for each GPU model.
 Run `nvidia-smi` on a GPU node to see the exact hardware available to your job.
 
-::::::::::::::::::::::::::::::::::::: callout
+![Ten cards, three types, and only two of them are scarce.](fig/02-gpu-hardware.png){alt='Sagehen HPC has ten GPUs in three types. Four A100 cards with 80 GB, best for the largest models and highest throughput. Four L40S cards with 48 GB, the least contended and the place to start. Two RTX PRO 6000 cards with 96 GB, the most GPU memory on the cluster. A note gives the syntax for requesting a type by name, and observes that a plain --gres=gpu:1 request gives whichever type is free first and is usually quicker to schedule.'}
 
+::::::::::::::::::::::::::::::::::::: callout
 ## GPU Selection Guide
 
 Choose your GPU based on model requirements:

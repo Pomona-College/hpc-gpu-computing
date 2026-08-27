@@ -6,7 +6,7 @@ title: "Learner Profiles"
 
 **Background:** Maria is a third-year PhD student in neuroscience. She has been training convolutional neural networks (CNNs) on brain imaging data using her laptop, but training takes days and she frequently runs out of memory with larger models.
 
-**Experience:** Comfortable with Python and PyTorch. Has used Sagehen for CPU-based data preprocessing (Workshops 0 and 9 completed). Has never used GPUs on a cluster before.
+**Experience:** Comfortable with Python and PyTorch. Has used Sagehen HPC for CPU-based data preprocessing (Workshops 0 and 9 completed). Has never used GPUs on a cluster before.
 
 **Motivation:** She needs to train deeper models on larger datasets for her dissertation. Her advisor suggested using the A100 GPUs on Sagehen to speed up training from days to hours.
 

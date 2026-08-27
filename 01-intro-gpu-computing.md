@@ -43,7 +43,9 @@ GPUs can provide 10x-100x speedup for suitable tasks:
 - Image processing: 5-20x speedup
 - Data sorting: 5-10x speedup
 
-## Sagehen GPU Hardware
+![A GPU is fast at one shape of problem, and no help at all with others.](fig/01-cpu-vs-gpu.png){alt='Two panels. A GPU helps when the same operation runs on thousands of elements at once, and for dense linear algebra such as matrix multiplication and convolutions. Stick with CPU when the work is sequential or full of branches and conditionals, or when the dataset is small enough that copying it to the GPU costs more than it saves. A note advises benchmarking a small case on both before requesting a GPU, since an idle GPU still blocks it for everyone else.'}
+
+## Sagehen HPC GPU Hardware
 
 Sagehen has **10 GPUs across multiple nodes** (confirmed May 2026): 4× A100 (80 GB), 4× L40S (48 GB), 2× RTX PRO 6000 Blackwell (96 GB). For full hardware breakdown see README.md or Workshop 16 episode 02.
 
@@ -134,7 +136,7 @@ import tensorflow as tf
 gpus = tf.config.list_physical_devices('GPU')
 ```
 
-## Getting Started with GPU on Sagehen
+## Getting Started with GPU on Sagehen HPC
 
 ### Three Steps
 

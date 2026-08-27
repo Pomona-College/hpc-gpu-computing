@@ -34,6 +34,8 @@ cuda/12.0.0
 cuda/12.2.1 (D)
 ```
 
+![Three commands, in order, before you trust a GPU job.](fig/04-gpu-verify.png){alt='Four steps. Get a GPU with srun on the gpu partition. Check the card is visible with nvidia-smi. Check the framework can see it by printing torch.cuda.is_available(). A True result means you are ready. A warning explains that False on a GPU node almost always means a CPU-only PyTorch build or an unactivated conda environment, rather than a problem with the card.'}
+
 ## Loading GPU Software
 
 ### PyTorch
@@ -223,9 +225,11 @@ Never run GPU code directly on the login node.
 
 **Error 2: "NVIDIA driver too old"**
 
-**Diagnosis:** There is a mismatch between the loaded CUDA toolkit version and the
-NVIDIA driver installed on the node. The PyTorch build expects CUDA 12.1, but the
-environment has an older CUDA version loaded.
+**Diagnosis:** The PyTorch build expects a *newer* CUDA than the node's driver
+supports. Sagehen HPC's GPU nodes report CUDA 12.7 in `nvidia-smi`, so this is rare
+here — but it happens if you install a PyTorch built against a CUDA newer than
+that. Note the number in `nvidia-smi` is the *driver's* capability, which is
+independent of which `cuda/` toolkit module you have loaded.
 
 **Fix:** Load a compatible CUDA module before running your code:
 ```bash

@@ -1,8 +1,8 @@
 ---
 carpentry: 'incubator'
-title: 'GPU Computing on Sagehen — Pomona College HPC Workshop Series'
-description: 'GPU computing on Sagehen: requesting A100, L40S and RTX PRO 6000 cards, CUDA setup, monitoring utilisation and GPU etiquette.'
-keywords: 'Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen, A100, deep learning'
+title: 'GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series'
+description: 'GPU computing on Sagehen HPC: requesting A100, L40S and RTX PRO 6000 cards, CUDA setup, monitoring utilisation and GPU etiquette.'
+keywords: 'Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen HPC, A100, deep learning'
 created: '2026-03-05'
 license: 'CC-BY 4.0'
 contact: 'its-hpc@pomona.edu'
