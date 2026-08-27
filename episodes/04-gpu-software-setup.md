@@ -34,6 +34,8 @@ cuda/12.0.0
 cuda/12.2.1 (D)
 ```
 
+![Three commands, in order, before you trust a GPU job.](fig/04-gpu-verify.png){alt='Four steps. Get a GPU with srun on the gpu partition. Check the card is visible with nvidia-smi. Check the framework can see it by printing torch.cuda.is_available(). A True result means you are ready. A warning explains that False on a GPU node almost always means a CPU-only PyTorch build or an unactivated conda environment, rather than a problem with the card.'}
+
 ## Loading GPU Software
 
 ### PyTorch

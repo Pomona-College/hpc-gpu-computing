@@ -68,6 +68,8 @@ python3 -m torch.distributed.launch --nproc_per_node=2 train.py
 #SBATCH --gres=gpu:l40s:1
 ```
 
+![Two questions about memory settle which card to ask for.](fig/03-gpu-selection.png){alt='A decision tree for choosing a GPU. If the model needs more than 80 GB, use an RTX PRO 6000 with 96 GB, of which there are two. If it needs more than 48 GB, use an A100 with 80 GB, of which there are four. Otherwise use an L40S with 48 GB, of which there are four and which usually has the shortest queue.'}
+
 ## Interactive GPU Sessions
 
 ### Launch Interactive GPU Shell

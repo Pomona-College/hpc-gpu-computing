@@ -51,6 +51,8 @@ Run `nvidia-smi` on a GPU node to see the exact hardware available to your job.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
+![Ten cards, three types, and only two of them are scarce.](fig/02-gpu-hardware.png){alt='Sagehen HPC has ten GPUs in three types. Four A100 cards with 80 GB, best for the largest models and highest throughput. Four L40S cards with 48 GB, the least contended and the place to start. Two RTX PRO 6000 cards with 96 GB, the most GPU memory on the cluster. A note gives the syntax for requesting a type by name, and observes that a plain --gres=gpu:1 request gives whichever type is free first and is usually quicker to schedule.'}
+
 ## GPU Selection Guide
 
 Choose your GPU based on model requirements:
