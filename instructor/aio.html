@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>GPU Computing on Sagehen — Pomona College HPC Workshop Series: All in One View</title>
+<title>GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
@@ -90,7 +90,7 @@
       <img class="small-logo" alt="Carpentries Incubator" src="../assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      GPU Computing on Sagehen — Pomona College HPC Workshop Series
+      GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -101,7 +101,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            GPU Computing on Sagehen — Pomona College HPC Workshop Series
+            GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series
           </span>
         </li>
         <li class="nav-item">
@@ -216,7 +216,7 @@
                   <div class="accordion accordion-flush" id="accordionFlush1">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading1">
-        <a href="index.html">GPU Computing on Sagehen</a>
+        <a href="index.html">GPU Computing on Sagehen HPC</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -240,7 +240,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-sagehen-gpu-hardware.html">2. Sagehen GPU Hardware Configuration</a>
+        <a href="02-sagehen-gpu-hardware.html">2. Sagehen HPC GPU Hardware Configuration</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -366,7 +366,7 @@
         
 <section id="aio-01-intro-gpu-computing"><p>Content from <a href="01-intro-gpu-computing.html">Introduction to GPU Computing</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-gpu-computing/edit/main/episodes/01-intro-gpu-computing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -426,8 +426,11 @@ seats) - GPU is a bus (slower per person, carries many passengers)</p>
 <p>GPUs can provide 10x-100x speedup for suitable tasks: - Deep learning
 training: 20-50x speedup - Scientific simulations: 10-30x speedup -
 Image processing: 5-20x speedup - Data sorting: 5-10x speedup</p>
+<figure><img src="../fig/01-cpu-vs-gpu.png" alt="Two panels. A GPU helps when the same operation runs on thousands of elements at once, and for dense linear algebra such as matrix multiplication and convolutions. Stick with CPU when the work is sequential or full of branches and conditionals, or when the dataset is small enough that copying it to the GPU costs more than it saves. A note advises benchmarking a small case on both before requesting a GPU, since an idle GPU still blocks it for everyone else." class="figure mx-auto d-block"><div class="figcaption">A GPU is fast at one shape of problem, and no
+help at all with others.</div>
+</figure>
 </div>
-</section><section><h2 class="section-heading" id="sagehen-gpu-hardware">Sagehen GPU Hardware<a class="anchor" aria-label="anchor" href="#sagehen-gpu-hardware"></a>
+</section><section><h2 class="section-heading" id="sagehen-hpc-gpu-hardware">Sagehen HPC GPU Hardware<a class="anchor" aria-label="anchor" href="#sagehen-hpc-gpu-hardware"></a>
 </h2>
 <hr class="half-width">
 <p>Sagehen has <strong>10 GPUs across multiple nodes</strong> (confirmed
@@ -590,7 +593,7 @@ GPU - <strong>scikit-cuda</strong>: scikit-learn acceleration</p>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>gpus <span class="op">=</span> tf.config.list_physical_devices(<span class="st">'GPU'</span>)</span></code></pre>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="getting-started-with-gpu-on-sagehen">Getting Started with GPU on Sagehen<a class="anchor" aria-label="anchor" href="#getting-started-with-gpu-on-sagehen"></a>
+</section><section><h2 class="section-heading" id="getting-started-with-gpu-on-sagehen-hpc">Getting Started with GPU on Sagehen HPC<a class="anchor" aria-label="anchor" href="#getting-started-with-gpu-on-sagehen-hpc"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -650,7 +653,7 @@ branching logic</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p><strong>Matrix multiplication – GPU.</strong> Matrix
@@ -700,9 +703,9 @@ automatically</li>
 </div>
 <!-- Reference links for workshop episodes -->
 </div>
-</section></section><section id="aio-02-sagehen-gpu-hardware"><p>Content from <a href="02-sagehen-gpu-hardware.html">Sagehen GPU Hardware Configuration</a></p>
+</section></section><section id="aio-02-sagehen-gpu-hardware"><p>Content from <a href="02-sagehen-gpu-hardware.html">Sagehen HPC GPU Hardware Configuration</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-gpu-computing/edit/main/episodes/02-sagehen-gpu-hardware.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -740,7 +743,7 @@ automatically</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="sagehen-gpu-nodes">Sagehen GPU Nodes<a class="anchor" aria-label="anchor" href="#sagehen-gpu-nodes"></a>
+<section><h2 class="section-heading" id="sagehen-hpc-gpu-nodes">Sagehen HPC GPU Nodes<a class="anchor" aria-label="anchor" href="#sagehen-hpc-gpu-nodes"></a>
 </h2>
 <hr class="half-width">
 <p>Sagehen has <strong>10 GPUs across multiple nodes</strong> (confirmed
@@ -833,7 +836,9 @@ check current availability.</p>
 <p>For detailed specifications, see NVIDIA’s official documentation for
 each GPU model. Run <code>nvidia-smi</code> on a GPU node to see the
 exact hardware available to your job.</p>
-<div id="gpu-selection-guide" class="callout">
+<figure><img src="../fig/02-gpu-hardware.png" alt="Sagehen HPC has ten GPUs in three types. Four A100 cards with 80 GB, best for the largest models and highest throughput. Four L40S cards with 48 GB, the least contended and the place to start. Two RTX PRO 6000 cards with 96 GB, the most GPU memory on the cluster. A note gives the syntax for requesting a type by name, and observes that a plain --gres=gpu:1 request gives whichever type is free first and is usually quicker to schedule." class="figure mx-auto d-block"><div class="figcaption">Ten cards, three types, and only two of them are
+scarce.</div>
+</figure><div id="gpu-selection-guide" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1154,7 +1159,7 @@ Blackwell)</li>
 <!-- Reference links for workshop episodes -->
 </section></section><section id="aio-03-requesting-gpus"><p>Content from <a href="03-requesting-gpus.html">Requesting and Allocating GPUs</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-gpu-computing/edit/main/episodes/03-requesting-gpus.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1249,6 +1254,9 @@ partition - <code>--gres=gpu:1</code>: Number and type of GPUs -
 <span id="cb3-6"><a href="#cb3-6" tabindex="-1" aria-label="code-block-3-6"></a><span class="co">#SBATCH --gres=gpu:l40s:2</span></span>
 <span id="cb3-7"><a href="#cb3-7" tabindex="-1" aria-label="code-block-3-7"></a><span class="co">#SBATCH --gres=gpu:l40s:1</span></span></code></pre>
 </div>
+<figure><img src="../fig/03-gpu-selection.png" alt="A decision tree for choosing a GPU. If the model needs more than 80 GB, use an RTX PRO 6000 with 96 GB, of which there are two. If it needs more than 48 GB, use an A100 with 80 GB, of which there are four. Otherwise use an L40S with 48 GB, of which there are four and which usually has the shortest queue." class="figure mx-auto d-block"><div class="figcaption">Two questions about memory settle which card to
+ask for.</div>
+</figure>
 </div>
 </section><section><h2 class="section-heading" id="interactive-gpu-sessions">Interactive GPU Sessions<a class="anchor" aria-label="anchor" href="#interactive-gpu-sessions"></a>
 </h2>
@@ -1487,7 +1495,7 @@ job name and <code>%j</code> to the job ID in output filenames.</p>
 <!-- highlight <labname>/<myusername> placeholders in code blocks; remove if the varnish theme handles this natively -->
 <script>(function(){var CSS='.sh-placeholder{color:#c2410c;font-weight:700}[data-bs-theme="dark"] .sh-placeholder,html.dark .sh-placeholder{color:#fdba74}@media (prefers-color-scheme: dark){[data-bs-theme="auto"] .sh-placeholder{color:#fdba74}}';var RX=/<labname>|<myusername>/g;function firstMatch(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodes=[],full='';while(w.nextNode()){nodes.push({n:w.currentNode,s:full.length});full+=w.currentNode.nodeValue;}RX.lastIndex=0;var m;while((m=RX.exec(full))){var s=m.index,e=s+m[0].length,inSpan=false,parts=[];for(var j=0;j<nodes.length;j++){var ns=nodes[j].s,ne=ns+nodes[j].n.nodeValue.length;if(ne<=s||ns>=e)continue;parts.push({node:nodes[j].n,a:Math.max(s-ns,0),b:Math.min(e-ns,nodes[j].n.nodeValue.length)});var p=nodes[j].n.parentNode;while(p&&p!==el){if(p.classList&&p.classList.contains('sh-placeholder')){inSpan=true;break;}p=p.parentNode;}}if(!inSpan&&parts.length)return parts;}return null;}function wrapParts(parts){for(var i=parts.length-1;i>=0;i--){var t=parts[i].node,txt=t.nodeValue,a=parts[i].a,b=parts[i].b;var span=document.createElement('span');span.className='sh-placeholder';span.textContent=txt.slice(a,b);var f=document.createDocumentFragment();if(a>0)f.appendChild(document.createTextNode(txt.slice(0,a)));f.appendChild(span);if(b<txt.length)f.appendChild(document.createTextNode(txt.slice(b)));t.parentNode.replaceChild(f,t);}}function run(){var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);document.querySelectorAll('pre,code').forEach(function(el){var guard=0,parts;while((parts=firstMatch(el))&&guard++<500){wrapParts(parts);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script><!-- Reference links for workshop episodes --></section></section><section id="aio-04-gpu-software-setup"><p>Content from <a href="04-gpu-software-setup.html">GPU Software Setup and Modules</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-gpu-computing/edit/main/episodes/04-gpu-software-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1539,7 +1547,9 @@ job name and <code>%j</code> to the job ID in output filenames.</p>
 <pre><code>cuda/11.8.0
 cuda/12.0.0
 cuda/12.2.1 (D)</code></pre>
-</section><section><h2 class="section-heading" id="loading-gpu-software">Loading GPU Software<a class="anchor" aria-label="anchor" href="#loading-gpu-software"></a>
+<figure><img src="../fig/04-gpu-verify.png" alt="Four steps. Get a GPU with srun on the gpu partition. Check the card is visible with nvidia-smi. Check the framework can see it by printing torch.cuda.is_available(). A True result means you are ready. A warning explains that False on a GPU node almost always means a CPU-only PyTorch build or an unactivated conda environment, rather than a problem with the card." class="figure mx-auto d-block"><div class="figcaption">Three commands, in order, before you trust a GPU
+job.</div>
+</figure></section><section><h2 class="section-heading" id="loading-gpu-software">Loading GPU Software<a class="anchor" aria-label="anchor" href="#loading-gpu-software"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -1757,10 +1767,13 @@ code on the login node.</p>
 </div>
 <p>Never run GPU code directly on the login node.</p>
 <p><strong>Error 2: “NVIDIA driver too old”</strong></p>
-<p><strong>Diagnosis:</strong> There is a mismatch between the loaded
-CUDA toolkit version and the NVIDIA driver installed on the node. The
-PyTorch build expects CUDA 12.1, but the environment has an older CUDA
-version loaded.</p>
+<p><strong>Diagnosis:</strong> The PyTorch build expects a
+<em>newer</em> CUDA than the node’s driver supports. Sagehen HPC’s GPU
+nodes report CUDA 12.7 in <code>nvidia-smi</code>, so this is rare here
+— but it happens if you install a PyTorch built against a CUDA newer
+than that. Note the number in <code>nvidia-smi</code> is the
+<em>driver’s</em> capability, which is independent of which
+<code>cuda/</code> toolkit module you have loaded.</p>
 <p><strong>Fix:</strong> Load a compatible CUDA module before running
 your code:</p>
 <div class="codewrapper sourceCode" id="cb17">
@@ -2477,7 +2490,7 @@ job requests enough CPU cores to match:
 </div>
 </section></section><section id="aio-07-gpu-etiquette"><p>Content from <a href="07-gpu-etiquette.html">GPU Etiquette and Best Practices</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-gpu-computing/edit/main/episodes/07-gpu-etiquette.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -2739,7 +2752,7 @@ usage.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>Wasteful pattern 1: Idle interactive session hogging 2
 A100s</strong></p>
@@ -2801,7 +2814,7 @@ would free resources for other researchers.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Sagehen has limited GPUs; fair sharing is essential</li>
+<li>Sagehen HPC has limited GPUs; fair sharing is essential</li>
 <li>Request appropriate GPU type for your workload</li>
 <li>Don’t monopolize GPUs or leave idle</li>
 <li>Test on L40S before scaling to A100</li>
@@ -2857,14 +2870,14 @@ would free resources for other researchers.</p>
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen, A100, deep learning",
+  "keywords": "Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen HPC, A100, deep learning",
   "name": "All in One View",
   "creativeWorkStatus": "active",
   "url": "https://pomona-college.github.io/hpc-gpu-computing/instructor/aio.html",
   "identifier": "https://pomona-college.github.io/hpc-gpu-computing/instructor/aio.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>GPU Computing on Sagehen — Pomona College HPC Workshop Series: All Images</title>
+<title>GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series: All Images</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
@@ -90,7 +90,7 @@
       <img class="small-logo" alt="Carpentries Incubator" src="assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      GPU Computing on Sagehen — Pomona College HPC Workshop Series
+      GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -101,7 +101,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            GPU Computing on Sagehen — Pomona College HPC Workshop Series
+            GPU Computing on Sagehen HPC — Pomona College HPC Workshop Series
           </span>
         </li>
         <li class="nav-item">
@@ -215,7 +215,7 @@
                   <div class="accordion accordion-flush" id="accordionFlush1">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading1">
-        <a href="index.html">GPU Computing on Sagehen</a>
+        <a href="index.html">GPU Computing on Sagehen HPC</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -239,7 +239,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-sagehen-gpu-hardware.html">2. Sagehen GPU Hardware Configuration</a>
+        <a href="02-sagehen-gpu-hardware.html">2. Sagehen HPC GPU Hardware Configuration</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -363,16 +363,36 @@
         <h1>All Images</h1>
         
 <section id="01-intro-gpu-computing"><h2 class="section-heading"><a href="01-intro-gpu-computing.html">Introduction to GPU Computing</a></h2>
-<hr class="half-width"></section><section id="02-sagehen-gpu-hardware"><h2 class="section-heading"><a href="02-sagehen-gpu-hardware.html">Sagehen GPU Hardware Configuration</a></h2>
+<hr class="half-width">
+<h3 id="01-intro-gpu-computing-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Two panels. A GPU helps when the same operation runs on thousands of elements at once, and for dense linear algebra such as matrix multiplication and convolutions. Stick with CPU when the work is sequential or full of branches and conditionals, or when the dataset is small enough that copying it to the GPU costs more than it saves. A note advises benchmarking a small case on both before requesting a GPU, since an idle GPU still blocks it for everyone else.’</p>
+<figure><img src="fig/01-cpu-vs-gpu.png" alt="Two panels. A GPU helps when the same operation runs on thousands of elements at once, and for dense linear algebra such as matrix multiplication and convolutions. Stick with CPU when the work is sequential or full of branches and conditionals, or when the dataset is small enough that copying it to the GPU costs more than it saves. A note advises benchmarking a small case on both before requesting a GPU, since an idle GPU still blocks it for everyone else." class="figure mx-auto d-block"><div class="figcaption">A GPU is fast at one shape of problem, and no
+help at all with others.</div>
+</figure><hr></section><section id="02-sagehen-gpu-hardware"><h2 class="section-heading"><a href="02-sagehen-gpu-hardware.html">Sagehen HPC GPU Hardware Configuration</a></h2>
 <hr class="half-width">
 <h3 id="02-sagehen-gpu-hardware-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Sagehen HPC has ten GPUs in three types. Four A100 cards with 80 GB, best for the largest models and highest throughput. Four L40S cards with 48 GB, the least contended and the place to start. Two RTX PRO 6000 cards with 96 GB, the most GPU memory on the cluster. A note gives the syntax for requesting a type by name, and observes that a plain --gres=gpu:1 request gives whichever type is free first and is usually quicker to schedule.’</p>
+<figure><img src="fig/02-gpu-hardware.png" alt="Sagehen HPC has ten GPUs in three types. Four A100 cards with 80 GB, best for the largest models and highest throughput. Four L40S cards with 48 GB, the least contended and the place to start. Two RTX PRO 6000 cards with 96 GB, the most GPU memory on the cluster. A note gives the syntax for requesting a type by name, and observes that a plain --gres=gpu:1 request gives whichever type is free first and is usually quicker to schedule." class="figure mx-auto d-block"><div class="figcaption">Ten cards, three types, and only two of them are
+scarce.</div>
+</figure><hr>
+<h3 id="02-sagehen-gpu-hardware-figure-2">Figure 2</h3>
 <p aria-hidden="true">Image 1 of 1: ‘Terminal showing an interactive GPU session requested with srun on the gpu partition. The nvidia-smi table reports one NVIDIA A100 80GB PCIe GPU with almost no memory in use and zero percent utilization, driver version 565.57.01 and CUDA version 12.7, and the user then exits back to the login node.’</p>
 <figure><img src="fig/02-nvidia-smi-a100-interactive.jpg" alt="Terminal showing an interactive GPU session requested with srun on the gpu partition. The nvidia-smi table reports one NVIDIA A100 80GB PCIe GPU with almost no memory in use and zero percent utilization, driver version 565.57.01 and CUDA version 12.7, and the user then exits back to the login node." class="figure mx-auto d-block"><div class="figcaption">An interactive <code>srun</code> session on
 gpu001: <code>nvidia-smi</code> confirms the allocated GPU — an A100
 80GB PCIe (driver 565.57.01, CUDA 12.7).</div>
 </figure><hr></section><section id="03-requesting-gpus"><h2 class="section-heading"><a href="03-requesting-gpus.html">Requesting and Allocating GPUs</a></h2>
-<hr class="half-width"></section><section id="04-gpu-software-setup"><h2 class="section-heading"><a href="04-gpu-software-setup.html">GPU Software Setup and Modules</a></h2>
-<hr class="half-width"></section><section id="05-pytorch-tensorflow"><h2 class="section-heading"><a href="05-pytorch-tensorflow.html">Training Models with PyTorch and TensorFlow</a></h2>
+<hr class="half-width">
+<h3 id="03-requesting-gpus-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A decision tree for choosing a GPU. If the model needs more than 80 GB, use an RTX PRO 6000 with 96 GB, of which there are two. If it needs more than 48 GB, use an A100 with 80 GB, of which there are four. Otherwise use an L40S with 48 GB, of which there are four and which usually has the shortest queue.’</p>
+<figure><img src="fig/03-gpu-selection.png" alt="A decision tree for choosing a GPU. If the model needs more than 80 GB, use an RTX PRO 6000 with 96 GB, of which there are two. If it needs more than 48 GB, use an A100 with 80 GB, of which there are four. Otherwise use an L40S with 48 GB, of which there are four and which usually has the shortest queue." class="figure mx-auto d-block"><div class="figcaption">Two questions about memory settle which card to
+ask for.</div>
+</figure><hr></section><section id="04-gpu-software-setup"><h2 class="section-heading"><a href="04-gpu-software-setup.html">GPU Software Setup and Modules</a></h2>
+<hr class="half-width">
+<h3 id="04-gpu-software-setup-figure-1">Figure 1</h3>
+<p aria-hidden="true">Image 1 of 1: ‘Four steps. Get a GPU with srun on the gpu partition. Check the card is visible with nvidia-smi. Check the framework can see it by printing torch.cuda.is_available(). A True result means you are ready. A warning explains that False on a GPU node almost always means a CPU-only PyTorch build or an unactivated conda environment, rather than a problem with the card.’</p>
+<figure><img src="fig/04-gpu-verify.png" alt="Four steps. Get a GPU with srun on the gpu partition. Check the card is visible with nvidia-smi. Check the framework can see it by printing torch.cuda.is_available(). A True result means you are ready. A warning explains that False on a GPU node almost always means a CPU-only PyTorch build or an unactivated conda environment, rather than a problem with the card." class="figure mx-auto d-block"><div class="figcaption">Three commands, in order, before you trust a GPU
+job.</div>
+</figure><hr></section><section id="05-pytorch-tensorflow"><h2 class="section-heading"><a href="05-pytorch-tensorflow.html">Training Models with PyTorch and TensorFlow</a></h2>
 <hr class="half-width"></section><section id="06-monitoring-optimization"><h2 class="section-heading"><a href="06-monitoring-optimization.html">Monitoring and Optimization</a></h2>
 <hr class="half-width"></section><section id="07-gpu-etiquette"><h2 class="section-heading"><a href="07-gpu-etiquette.html">GPU Etiquette and Best Practices</a></h2>
 <hr class="half-width"></section>
@@ -419,14 +439,14 @@ gpu001: <code>nvidia-smi</code> confirms the allocated GPU — an A100
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen, A100, deep learning",
+  "keywords": "Pomona College, HPC, research computing, GPU, CUDA, PyTorch, TensorFlow, Sagehen HPC, A100, deep learning",
   "name": "All Images",
   "creativeWorkStatus": "active",
   "url": "https://pomona-college.github.io/hpc-gpu-computing/images.html",
   "identifier": "https://pomona-college.github.io/hpc-gpu-computing/images.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>
